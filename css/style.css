@@ -1,0 +1,140 @@
+/* === ESTILOS GLOBALES === */
+body {
+    background-color: #ffffff;
+    /* Fondo blanco limpio */
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* === HEADER === */
+header {
+    text-align: center;
+    padding: 30px 0 10px 0;
+}
+
+header img {
+    width: 500px;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+}
+
+header img:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* === TITULOS === */
+h2 {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* === LABELS === */
+label {
+    font-weight: 500;
+    color: #e3f2fd;
+    /* azul claro */
+}
+/* === FORMULARIO === */
+.form-frame {
+    width: 90%;
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 40px 50px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #56687c, #1b4b99);
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15);
+    color: white;
+}
+
+/* === CAMPOS DE TEXTO === */
+.form-control {
+    width: 100%;              /* Ocupa todo el ancho del contenedor */
+    max-width: 100%;          /* Evita que se limiten */
+    border: 2px solid #bbdefb;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    background-color: #f8f9fa;
+    color: #212121;
+    padding: 12px 15px;
+    font-size: 1rem;
+}
+
+.form-control:focus {
+    border-color: #64b5f6;
+    box-shadow: 0 0 0 0.2rem rgba(187, 222, 251, 0.5);
+}
+
+/* Asegura que el textarea se comporte igual */
+textarea.form-control {
+    min-height: 100px;
+    width: 100%;
+    max-width: 100%;
+    resize: vertical;
+}
+
+/* === BOTÓN === */
+.custom-btn {
+    background-color: #ffffff;
+    color: #1565c0;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+.custom-btn:hover {
+    background-color: #e3f2fd;
+    color:#212121;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+.custom-btn2 {
+    background-color: #1565c0;
+    color:  #ffffff;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+.custom-btn2:hover {
+    background-color: #e3f2fd;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* === TEXTAREA === */
+textarea {
+    resize: none;
+}
+
+/* === FOOTER === */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #555;
+    font-size: 0.9rem;
+}
+.invalid-feedback{
+    font-size:larger;
+    font-weight: bold;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+    header img {
+        width: 250px;
+    }
+
+    .form-frame {
+        margin: 30px 15px;
+        padding: 30px 20px;
+    }
+}
