@@ -7,15 +7,10 @@
 // se captura el clic a nivel del documento y luego se analiza cuál fue el elemento clicado.
 document.addEventListener("click", (event) => {
 
-    // ---------------------------------------------------------------------------------------------
-    // 1. OBTENER EL ID DEL ELEMENTO CLICADO
-    // ---------------------------------------------------------------------------------------------
-    // "event.target" representa el elemento exacto sobre el que el usuario hizo clic.
-    // Aquí se muestra en consola el ID de ese elemento, para propósitos de depuración.
-    console.log(event.target.id);
+    
 
     // ---------------------------------------------------------------------------------------------
-    // 2. DECIDIR LA ACCIÓN SEGÚN EL ID DEL ELEMENTO CLICADO
+    // DECIDIR LA ACCIÓN SEGÚN EL ID DEL ELEMENTO CLICADO
     // ---------------------------------------------------------------------------------------------
     // Se utiliza una estructura switch() para determinar qué hacer dependiendo del botón presionado.
     // Cada botón debe tener un atributo "id" único en el HTML.
